@@ -152,7 +152,7 @@ namespace RoomAliveToolkit
                         //var stream = new WICStream(imagingFactory, "test" + frame++ + ".jpg", SharpDX.IO.NativeFileAccess.Write);
 
                         var stream = new WICStream(imagingFactory, memoryStream);
-
+                        
                         var jpegBitmapEncoder = new JpegBitmapEncoder(imagingFactory);
                         jpegBitmapEncoder.Initialize(stream);
 
